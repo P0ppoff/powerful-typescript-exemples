@@ -1,0 +1,14 @@
+{
+  "name": "humantalk-typescript",
+  "version": "1.0.0",
+  "description": "Session human talk Grenoble 07/02/23",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["typescript", "examples", "beta"],
+  "author": "jules.hablot@zenika.com",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "beta"
+  }
+}
