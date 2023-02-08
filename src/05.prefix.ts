@@ -1,4 +1,4 @@
-type ColorHexa = string
+type ColorHexa = `#${string}`
 
 const blueSky: ColorHexa = '#1A03AA'
 const black: ColorHexa = '000000' // 🤔

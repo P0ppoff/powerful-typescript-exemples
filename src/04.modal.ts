@@ -4,7 +4,9 @@ export interface IModalProps {
 }
 
 // Type me 🤔
-function openModal(modalType: any, modalProps?: any) {
+function openModal<
+    ModalType extends keyof IModalProps
+>(modalType: ModalType, modalProps?: IModalProps[ModalType]) {
 }
 
 openModal('help', {message: 'Aidez moi!'});
@@ -44,5 +46,4 @@ openModal('login', {title: 'Authentification'})
 
 
 
-function openModalSolution<ModalType extends keyof IModalProps>(modalType: ModalType, modalProps?: IModalProps[ModalType]) {
-}
+

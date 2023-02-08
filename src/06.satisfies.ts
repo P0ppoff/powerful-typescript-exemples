@@ -1,10 +1,10 @@
 type Route = { path: string; children?: Routes }
 type Routes = Record<string, Route>
 
-const routes: Routes = {
+const routes = {
     AUTH: {
-        path: '/auth'
+        path: '/auth',
     }
-}
+} satisfies Routes
 
 routes.AUTH // 🤔

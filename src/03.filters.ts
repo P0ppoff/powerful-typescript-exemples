@@ -8,4 +8,7 @@ const listeAFiltrer: Array<number | undefined | null> = [
 ]
 
 // Comment typer listeFiltree ? 🤔
-const listeFiltree = listeAFiltrer.filter((value) => Boolean(value))
+const listeFiltree =
+    listeAFiltrer.filter(
+        (value): value is number => Boolean(value)
+    )
